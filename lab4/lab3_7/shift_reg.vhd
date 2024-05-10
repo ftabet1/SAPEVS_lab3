@@ -66,7 +66,7 @@ main: process(clk, RES) begin
 		end if;
 	end if;
 	
-	if(rising_edge(res)) then
+	if(res = '1') then
 		D<="00000000";
 	end if;
 	
